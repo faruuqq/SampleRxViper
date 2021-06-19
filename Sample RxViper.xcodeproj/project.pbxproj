@@ -3,27 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2A06FE4E267C8BAC00FB96EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06FE4D267C8BAC00FB96EC /* AppDelegate.swift */; };
 		2A06FE50267C8BAC00FB96EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06FE4F267C8BAC00FB96EC /* SceneDelegate.swift */; };
-		2A06FE52267C8BAC00FB96EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06FE51267C8BAC00FB96EC /* ViewController.swift */; };
-		2A06FE55267C8BAC00FB96EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A06FE53267C8BAC00FB96EC /* Main.storyboard */; };
+		2A06FE55267C8BAC00FB96EC /* QuoteListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A06FE53267C8BAC00FB96EC /* QuoteListView.storyboard */; };
 		2A06FE57267C8BAF00FB96EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A06FE56267C8BAF00FB96EC /* Assets.xcassets */; };
 		2A06FE5A267C8BAF00FB96EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A06FE58267C8BAF00FB96EC /* LaunchScreen.storyboard */; };
+		2A8B721D267C923100CDCC91 /* QuoteListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7218267C923100CDCC91 /* QuoteListPresenter.swift */; };
+		2A8B721E267C923100CDCC91 /* QuoteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7219267C923100CDCC91 /* QuoteListRouter.swift */; };
+		2A8B721F267C923100CDCC91 /* QuoteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B721A267C923100CDCC91 /* QuoteListInteractor.swift */; };
+		2A8B7220267C923100CDCC91 /* QuoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B721B267C923100CDCC91 /* QuoteListView.swift */; };
+		2A8B7221267C923100CDCC91 /* QuoteListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B721C267C923100CDCC91 /* QuoteListEntity.swift */; };
+		2A8B7223267C92DE00CDCC91 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7222267C92DE00CDCC91 /* ApiManager.swift */; };
+		2A8B722A267CE62E00CDCC91 /* QuoteDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7225267CE62E00CDCC91 /* QuoteDetailPresenter.swift */; };
+		2A8B722B267CE62E00CDCC91 /* QuoteDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7226267CE62E00CDCC91 /* QuoteDetailRouter.swift */; };
+		2A8B722C267CE62E00CDCC91 /* QuoteDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7227267CE62E00CDCC91 /* QuoteDetailInteractor.swift */; };
+		2A8B722D267CE62E00CDCC91 /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7228267CE62E00CDCC91 /* QuoteDetailView.swift */; };
+		2A8B722E267CE62E00CDCC91 /* QuoteDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7229267CE62E00CDCC91 /* QuoteDetailEntity.swift */; };
+		B13B1FD4702C2383971E4DE5 /* Pods_Sample_RxViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C44D9175336165E295061F3 /* Pods_Sample_RxViper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A06FE4A267C8BAC00FB96EC /* Sample RxViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample RxViper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A06FE4D267C8BAC00FB96EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A06FE4F267C8BAC00FB96EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2A06FE51267C8BAC00FB96EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2A06FE54267C8BAC00FB96EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A06FE54267C8BAC00FB96EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/QuoteListView.storyboard; sourceTree = "<group>"; };
 		2A06FE56267C8BAF00FB96EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A06FE59267C8BAF00FB96EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A06FE5B267C8BAF00FB96EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8B7218267C923100CDCC91 /* QuoteListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListPresenter.swift; sourceTree = "<group>"; };
+		2A8B7219267C923100CDCC91 /* QuoteListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListRouter.swift; sourceTree = "<group>"; };
+		2A8B721A267C923100CDCC91 /* QuoteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListInteractor.swift; sourceTree = "<group>"; };
+		2A8B721B267C923100CDCC91 /* QuoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListView.swift; sourceTree = "<group>"; };
+		2A8B721C267C923100CDCC91 /* QuoteListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListEntity.swift; sourceTree = "<group>"; };
+		2A8B7222267C92DE00CDCC91 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		2A8B7225267CE62E00CDCC91 /* QuoteDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailPresenter.swift; sourceTree = "<group>"; };
+		2A8B7226267CE62E00CDCC91 /* QuoteDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailRouter.swift; sourceTree = "<group>"; };
+		2A8B7227267CE62E00CDCC91 /* QuoteDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailInteractor.swift; sourceTree = "<group>"; };
+		2A8B7228267CE62E00CDCC91 /* QuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailView.swift; sourceTree = "<group>"; };
+		2A8B7229267CE62E00CDCC91 /* QuoteDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailEntity.swift; sourceTree = "<group>"; };
+		8C44D9175336165E295061F3 /* Pods_Sample_RxViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_RxViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0601AB7C01601302E6D56B7 /* Pods-Sample RxViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample RxViper.release.xcconfig"; path = "Target Support Files/Pods-Sample RxViper/Pods-Sample RxViper.release.xcconfig"; sourceTree = "<group>"; };
+		FD5675DFD35EE05044397A42 /* Pods-Sample RxViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample RxViper.debug.xcconfig"; path = "Target Support Files/Pods-Sample RxViper/Pods-Sample RxViper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13B1FD4702C2383971E4DE5 /* Pods_Sample_RxViper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +67,8 @@
 			children = (
 				2A06FE4C267C8BAC00FB96EC /* Sample RxViper */,
 				2A06FE4B267C8BAC00FB96EC /* Products */,
+				BBEA830253B64AB9135F7D8A /* Pods */,
+				7AECDDB918B60CB09315E643 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +83,90 @@
 		2A06FE4C267C8BAC00FB96EC /* Sample RxViper */ = {
 			isa = PBXGroup;
 			children = (
+				2A8B7208267C904700CDCC91 /* App */,
+				2A8B720C267C908300CDCC91 /* Global */,
+				2A8B7209267C904E00CDCC91 /* Modules */,
+				2A8B720B267C905B00CDCC91 /* Resources */,
+			);
+			path = "Sample RxViper";
+			sourceTree = "<group>";
+		};
+		2A8B7208267C904700CDCC91 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				2A06FE4D267C8BAC00FB96EC /* AppDelegate.swift */,
 				2A06FE4F267C8BAC00FB96EC /* SceneDelegate.swift */,
-				2A06FE51267C8BAC00FB96EC /* ViewController.swift */,
-				2A06FE53267C8BAC00FB96EC /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2A8B7209267C904E00CDCC91 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2A8B720D267C909000CDCC91 /* QuoteList */,
+				2A8B7224267CE60900CDCC91 /* QuoteDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2A8B720B267C905B00CDCC91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2A06FE56267C8BAF00FB96EC /* Assets.xcassets */,
 				2A06FE58267C8BAF00FB96EC /* LaunchScreen.storyboard */,
 				2A06FE5B267C8BAF00FB96EC /* Info.plist */,
 			);
-			path = "Sample RxViper";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A8B720C267C908300CDCC91 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2A8B7222267C92DE00CDCC91 /* ApiManager.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		2A8B720D267C909000CDCC91 /* QuoteList */ = {
+			isa = PBXGroup;
+			children = (
+				2A8B721B267C923100CDCC91 /* QuoteListView.swift */,
+				2A06FE53267C8BAC00FB96EC /* QuoteListView.storyboard */,
+				2A8B7218267C923100CDCC91 /* QuoteListPresenter.swift */,
+				2A8B721A267C923100CDCC91 /* QuoteListInteractor.swift */,
+				2A8B7219267C923100CDCC91 /* QuoteListRouter.swift */,
+				2A8B721C267C923100CDCC91 /* QuoteListEntity.swift */,
+			);
+			path = QuoteList;
+			sourceTree = "<group>";
+		};
+		2A8B7224267CE60900CDCC91 /* QuoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2A8B7225267CE62E00CDCC91 /* QuoteDetailPresenter.swift */,
+				2A8B7226267CE62E00CDCC91 /* QuoteDetailRouter.swift */,
+				2A8B7227267CE62E00CDCC91 /* QuoteDetailInteractor.swift */,
+				2A8B7228267CE62E00CDCC91 /* QuoteDetailView.swift */,
+				2A8B7229267CE62E00CDCC91 /* QuoteDetailEntity.swift */,
+			);
+			path = QuoteDetail;
+			sourceTree = "<group>";
+		};
+		7AECDDB918B60CB09315E643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C44D9175336165E295061F3 /* Pods_Sample_RxViper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBEA830253B64AB9135F7D8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD5675DFD35EE05044397A42 /* Pods-Sample RxViper.debug.xcconfig */,
+				C0601AB7C01601302E6D56B7 /* Pods-Sample RxViper.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A06FE5E267C8BAF00FB96EC /* Build configuration list for PBXNativeTarget "Sample RxViper" */;
 			buildPhases = (
+				8467324170FB56C279DA8963 /* [CP] Check Pods Manifest.lock */,
 				2A06FE46267C8BAC00FB96EC /* Sources */,
 				2A06FE47267C8BAC00FB96EC /* Frameworks */,
 				2A06FE48267C8BAC00FB96EC /* Resources */,
+				EA520562B21B269F15E6B888 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,32 +230,84 @@
 			files = (
 				2A06FE5A267C8BAF00FB96EC /* LaunchScreen.storyboard in Resources */,
 				2A06FE57267C8BAF00FB96EC /* Assets.xcassets in Resources */,
-				2A06FE55267C8BAC00FB96EC /* Main.storyboard in Resources */,
+				2A06FE55267C8BAC00FB96EC /* QuoteListView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8467324170FB56C279DA8963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sample RxViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA520562B21B269F15E6B888 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample RxViper/Pods-Sample RxViper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample RxViper/Pods-Sample RxViper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample RxViper/Pods-Sample RxViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A06FE46267C8BAC00FB96EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A06FE52267C8BAC00FB96EC /* ViewController.swift in Sources */,
+				2A8B722D267CE62E00CDCC91 /* QuoteDetailView.swift in Sources */,
+				2A8B7223267C92DE00CDCC91 /* ApiManager.swift in Sources */,
+				2A8B722C267CE62E00CDCC91 /* QuoteDetailInteractor.swift in Sources */,
+				2A8B722E267CE62E00CDCC91 /* QuoteDetailEntity.swift in Sources */,
+				2A8B7220267C923100CDCC91 /* QuoteListView.swift in Sources */,
+				2A8B721D267C923100CDCC91 /* QuoteListPresenter.swift in Sources */,
+				2A8B722A267CE62E00CDCC91 /* QuoteDetailPresenter.swift in Sources */,
 				2A06FE4E267C8BAC00FB96EC /* AppDelegate.swift in Sources */,
+				2A8B721F267C923100CDCC91 /* QuoteListInteractor.swift in Sources */,
+				2A8B721E267C923100CDCC91 /* QuoteListRouter.swift in Sources */,
 				2A06FE50267C8BAC00FB96EC /* SceneDelegate.swift in Sources */,
+				2A8B722B267CE62E00CDCC91 /* QuoteDetailRouter.swift in Sources */,
+				2A8B7221267C923100CDCC91 /* QuoteListEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2A06FE53267C8BAC00FB96EC /* Main.storyboard */ = {
+		2A06FE53267C8BAC00FB96EC /* QuoteListView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2A06FE54267C8BAC00FB96EC /* Base */,
 			);
-			name = Main.storyboard;
+			name = QuoteListView.storyboard;
 			sourceTree = "<group>";
 		};
 		2A06FE58267C8BAF00FB96EC /* LaunchScreen.storyboard */ = {
@@ -283,10 +439,12 @@
 		};
 		2A06FE5F267C8BAF00FB96EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD5675DFD35EE05044397A42 /* Pods-Sample RxViper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L7CSTPQKF;
 				INFOPLIST_FILE = "Sample RxViper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,10 +460,12 @@
 		};
 		2A06FE60267C8BAF00FB96EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0601AB7C01601302E6D56B7 /* Pods-Sample RxViper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L7CSTPQKF;
 				INFOPLIST_FILE = "Sample RxViper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
