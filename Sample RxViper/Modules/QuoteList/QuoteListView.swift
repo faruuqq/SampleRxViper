@@ -40,8 +40,8 @@ class QuoteListView: UIViewController {
         super.viewDidLoad()
         self.title = "Simpson Quotes"
         bindToTableView()
+        handleSelectedRow()
         presenter?.loadMetrics()
-        
     }
 
     static func instance(withPresenter presenter: QuoteListPresenter) -> QuoteListView {
@@ -78,8 +78,11 @@ extension QuoteListView {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 self.tableView.deselectRow(at: indexPath, animated: true)
             }
+            let quoteDetailEntity = QuoteDetailEntity(
+                image: item.image,
+                quote: item.quote)
+            self.presenter?.navigateToDetailView(using: self.navigationController!, with: quoteDetailEntity)
             
-            print(item)
         }.disposed(by: bag)
     }
 }

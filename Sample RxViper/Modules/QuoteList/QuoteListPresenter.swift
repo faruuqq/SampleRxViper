@@ -59,4 +59,8 @@ class QuoteListPresenter {
         interactor.loadMetrics()
     }
     
+    func navigateToDetailView(using navigation: UINavigationController, with data: QuoteDetailEntity) {
+        router.pushToQuoteDetailView(using: navigation, with: data)
+    }
+    
 }

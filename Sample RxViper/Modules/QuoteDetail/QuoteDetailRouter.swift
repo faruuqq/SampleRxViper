@@ -29,9 +29,9 @@ import UIKit
 
 class QuoteDetailRouter {
     
-    func showView() -> QuoteDetailView {
+    func showView(with data: QuoteDetailEntity) -> QuoteDetailView {
         let interactor = QuoteDetailInteractor()
-        let presenter = QuoteDetailPresenter(interactor: interactor)
+        let presenter = QuoteDetailPresenter(interactor: interactor, dataPassed: data)
         let view = QuoteDetailView.instance(withPresenter: presenter)
         return view
     }

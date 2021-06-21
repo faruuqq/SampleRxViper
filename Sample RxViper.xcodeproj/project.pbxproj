@@ -12,6 +12,7 @@
 		2A06FE55267C8BAC00FB96EC /* QuoteListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A06FE53267C8BAC00FB96EC /* QuoteListView.storyboard */; };
 		2A06FE57267C8BAF00FB96EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A06FE56267C8BAF00FB96EC /* Assets.xcassets */; };
 		2A06FE5A267C8BAF00FB96EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A06FE58267C8BAF00FB96EC /* LaunchScreen.storyboard */; };
+		2A3F759926803040001E60D7 /* QuoteDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3F759826803040001E60D7 /* QuoteDetailView.storyboard */; };
 		2A8B721D267C923100CDCC91 /* QuoteListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7218267C923100CDCC91 /* QuoteListPresenter.swift */; };
 		2A8B721E267C923100CDCC91 /* QuoteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B7219267C923100CDCC91 /* QuoteListRouter.swift */; };
 		2A8B721F267C923100CDCC91 /* QuoteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B721A267C923100CDCC91 /* QuoteListInteractor.swift */; };
@@ -34,6 +35,7 @@
 		2A06FE56267C8BAF00FB96EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A06FE59267C8BAF00FB96EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A06FE5B267C8BAF00FB96EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A3F759826803040001E60D7 /* QuoteDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuoteDetailView.storyboard; sourceTree = "<group>"; };
 		2A8B7218267C923100CDCC91 /* QuoteListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListPresenter.swift; sourceTree = "<group>"; };
 		2A8B7219267C923100CDCC91 /* QuoteListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListRouter.swift; sourceTree = "<group>"; };
 		2A8B721A267C923100CDCC91 /* QuoteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListInteractor.swift; sourceTree = "<group>"; };
@@ -130,12 +132,12 @@
 		2A8B720D267C909000CDCC91 /* QuoteList */ = {
 			isa = PBXGroup;
 			children = (
-				2A8B721B267C923100CDCC91 /* QuoteListView.swift */,
 				2A06FE53267C8BAC00FB96EC /* QuoteListView.storyboard */,
+				2A8B721B267C923100CDCC91 /* QuoteListView.swift */,
 				2A8B7218267C923100CDCC91 /* QuoteListPresenter.swift */,
 				2A8B721A267C923100CDCC91 /* QuoteListInteractor.swift */,
-				2A8B7219267C923100CDCC91 /* QuoteListRouter.swift */,
 				2A8B721C267C923100CDCC91 /* QuoteListEntity.swift */,
+				2A8B7219267C923100CDCC91 /* QuoteListRouter.swift */,
 			);
 			path = QuoteList;
 			sourceTree = "<group>";
@@ -143,11 +145,12 @@
 		2A8B7224267CE60900CDCC91 /* QuoteDetail */ = {
 			isa = PBXGroup;
 			children = (
-				2A8B7225267CE62E00CDCC91 /* QuoteDetailPresenter.swift */,
-				2A8B7226267CE62E00CDCC91 /* QuoteDetailRouter.swift */,
-				2A8B7227267CE62E00CDCC91 /* QuoteDetailInteractor.swift */,
+				2A3F759826803040001E60D7 /* QuoteDetailView.storyboard */,
 				2A8B7228267CE62E00CDCC91 /* QuoteDetailView.swift */,
+				2A8B7225267CE62E00CDCC91 /* QuoteDetailPresenter.swift */,
+				2A8B7227267CE62E00CDCC91 /* QuoteDetailInteractor.swift */,
 				2A8B7229267CE62E00CDCC91 /* QuoteDetailEntity.swift */,
+				2A8B7226267CE62E00CDCC91 /* QuoteDetailRouter.swift */,
 			);
 			path = QuoteDetail;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A06FE5A267C8BAF00FB96EC /* LaunchScreen.storyboard in Resources */,
+				2A3F759926803040001E60D7 /* QuoteDetailView.storyboard in Resources */,
 				2A06FE57267C8BAF00FB96EC /* Assets.xcassets in Resources */,
 				2A06FE55267C8BAC00FB96EC /* QuoteListView.storyboard in Resources */,
 			);

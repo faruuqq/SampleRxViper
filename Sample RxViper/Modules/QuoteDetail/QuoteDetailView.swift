@@ -26,13 +26,20 @@
 // 
 
 import UIKit
+import RxSwift
+import Kingfisher
 
 class QuoteDetailView: UIViewController {
     
+    @IBOutlet weak var simpsonImage: UIImageView!
+    @IBOutlet weak var simpsonQuote: UILabel!
+    
     private var presenter: QuoteDetailPresenter?
+    private let bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
         
     }
 
@@ -46,5 +53,24 @@ class QuoteDetailView: UIViewController {
         return anyView
     }
 
+}
+
+extension QuoteDetailView {
+    
+    fileprivate func loadData() {
+        presenter?.quoteSubject
+            .subscribe(onNext: { item in
+                self.simpsonQuote.text = item.quote
+                self.simpsonImage.kf.indicatorType = .activity
+                self.simpsonImage.kf.setImage(
+                    with: URL(string: item.image),
+                    placeholder: nil,
+                    options: [
+                        .transition(.fade(0.5)),
+                        .cacheOriginalImage
+                    ],
+                    completionHandler: nil)
+            }) .disposed(by: bag)
+    }
 }
 

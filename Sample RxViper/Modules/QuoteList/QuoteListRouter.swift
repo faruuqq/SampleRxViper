@@ -36,11 +36,9 @@ class QuoteListRouter {
         return view
     }
     
-    /*
-    func pushToSecondVC(using navigation: UINavigationController, with data: AnyEntity) {
-        let secondVCRouter = SeconVCRouter.showView(with: data)
-        navigation.pushViewController(secondVCRouter, animated: true)
+    func pushToQuoteDetailView(using navigation: UINavigationController, with data: QuoteDetailEntity) {
+        let detailView = QuoteDetailRouter().showView(with: data)
+        navigation.pushViewController(detailView, animated: true)
     }
-     */
     
 }

@@ -26,14 +26,21 @@
 // 
 
 import Foundation
+import RxSwift
 
 class QuoteDetailPresenter {
     
     private let interactor: QuoteDetailInteractor
     private let router = QuoteDetailRouter()
     
-    init(interactor: QuoteDetailInteractor) {
+    var quoteSubject = AsyncSubject<QuoteDetailEntity>()
+    
+    init(interactor: QuoteDetailInteractor, dataPassed: QuoteDetailEntity?) {
         self.interactor = interactor
+        if let data = dataPassed {
+            quoteSubject.onNext(data)
+            quoteSubject.onCompleted()
+        }
     }
     
 }

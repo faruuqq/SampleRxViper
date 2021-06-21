@@ -28,5 +28,6 @@
 import Foundation
 
 struct QuoteDetailEntity {
-    
+    let image: String
+    let quote: String
 }
